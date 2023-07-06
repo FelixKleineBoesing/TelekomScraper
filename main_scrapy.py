@@ -1,10 +1,10 @@
 import scrapy
 from scrapy.crawler import CrawlerProcess
-from telekom.spiders.support import SupportSpider
+from telekom.spiders.pdftelekom import PDFSpider
 
 process = CrawlerProcess(
     settings={}
 )
 
-process.crawl(SupportSpider)
+process.crawl(PDFSpider)
 process.start()
